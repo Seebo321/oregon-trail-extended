@@ -2,7 +2,7 @@ class Wagon {
     constructor (capacity) {
         this.capacity = capacity
         this.passengers=[]
-        this.avaiableSeats=capacity
+        this.avaiableSeats=null
     }
     getAvailableSeatCount() {
         this.avaiableSeats=this.capacity-this.passengers.length
