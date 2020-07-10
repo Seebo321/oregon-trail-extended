@@ -6,10 +6,12 @@ let maude = new Traveler('Maude')
 console.log(`Wagon Seat Count?: ${ wagon.getAvailableSeatCount() } – EXPECTED: 2. The wagon starts with 2 seats. We haven't added travelers to the wagon yet.`)
 wagon.join(henrietta)
 console.log(`Wagon Seat Count?: ${ wagon.getAvailableSeatCount() } – EXPECTED: 1. Henrietta just joined.`)
-wagon.join(juan)
 console.log('juan tried to join')
+wagon.join(juan)
+
+console.log('maud tried to join')
 wagon.join(maude) 
-console.log('maud tried to join') // There is no room for her!
+ // There is no room for her!
 console.log(`Wagon Seat Count?: ${ wagon.getAvailableSeatCount() } – EXPECTED: 0 – There is no room for Maude, but Juan was able to join.`)
 henrietta.hunt()   // Henrietta goes in search of food.
 juan.eat()         // Juan eats – as Juan does. 🤣
