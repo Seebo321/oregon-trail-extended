@@ -27,6 +27,8 @@ class Wagon {
         }
     }
     totalFood(){
+        // https://stackoverflow.com/questions/16626735/how-to-loop-through-an-array-containing-objects-and-access-their-properties
+        // below code was helped achieved by above link
     let totalNums = this.passengers.map(nums => nums.food).reduce((a, b) => a + b, 0);
         console.log('The toal amount of food on the wagon is '+totalNums+'.')
         return totalNums
