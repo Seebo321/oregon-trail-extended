@@ -46,7 +46,7 @@ class Hunter extends Traveler{
             this.food-=2}}
     giveFood(hungrySap,numOfFoodUnits){
         if(numOfFoodUnits>this.food){console.log('haha just kidding not enough food to give you')}else{
-        console.log(hungrySap.name+' you can have my left overs.')
+        console.log(hungrySap.name+' "you can have my left overs."'+'says '+this.name)
         this.food-=numOfFoodUnits
         hungrySap.food+=numOfFoodUnits
     }}
